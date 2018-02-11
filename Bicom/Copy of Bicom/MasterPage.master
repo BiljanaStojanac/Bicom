@@ -1,0 +1,242 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Novi klijent.aspx");
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Izmena klijenata.aspx");
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Izmena kartona1.aspx");
+    }
+
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Novi karton1.aspx");
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Pregled kartona.aspx");
+    }
+
+    protected void Button6_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Pretraga.aspx");
+    }
+
+    protected void Button7_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Pregled klijenata.aspx");
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 120%;
+        }
+        .style2
+        {
+            width: 131px;
+        }
+        .style3
+        {
+            height: 16px;
+        }
+        .style4
+        {
+            width: 158px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-color: #CCCCFF">
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> 
+        B&nbsp;&nbsp;&nbsp;&nbsp; i&nbsp;&nbsp;&nbsp;&nbsp; c&nbsp;&nbsp;&nbsp;&nbsp; o&nbsp;&nbsp;&nbsp;&nbsp; 
+        m<br />
+        </b>
+        <table class="style1">
+            <tr bgcolor="White">
+                <td class="style4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <table bgcolor="White" class="style1" style="background-color: #CCCCFF">
+            <tr>
+                <td class="style2" bgcolor="#FFFFCC" style="background-color: #FFFFFF">
+                    &nbsp;</td>
+                <td rowspan="19">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        <p class="style3" style="background-color: #CCCCFF">
+                            &nbsp;</p>
+                        <p>
+                    <asp:Button ID="Button5" runat="server" Height="26px" Text="Pregled kartona" 
+                        Width="157px" onclick="Button5_Click" Visible="False" />
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="#FFFFCC" style="background-color: #FFFFFF">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="#0066FF" style="background-color: #9966FF">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Medium" 
+                        Text="Klijenti" ForeColor="White"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" align="center" bgcolor="White">
+                    <asp:Button ID="Button1" runat="server" 
+                        onclick="Button1_Click" Text="Unos novog klijenta" Height="26px" 
+                        Width="157px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
+                        Text="Izmena i prvo testiranje" Width="157px" Height="26px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    <asp:Button ID="Button7" runat="server" Height="26px" onclick="Button7_Click" 
+                        Text="Lista klijenata" Width="157px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="#0066FF" style="background-color: #9966FF">
+                    <asp:Label ID="Label2" runat="server" Font-Bold="True" Text="Kartoni" 
+                        ForeColor="White"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    <asp:Button ID="Button4" runat="server" Height="26px" onclick="Button4_Click" 
+                        Text="Tretmani" Width="157px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    <asp:Button ID="Button3" runat="server" onclick="Button3_Click" 
+                        Text="Izmena kartona" Height="26px" Width="157px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    <asp:Button ID="Button6" runat="server" Height="26px" Text="Pregledi ..." 
+                        Width="157px" onclick="Button6_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    <asp:HyperLink ID="HyperLink3" runat="server" ImageUrl="~/google.bmp" 
+                        NavigateUrl="http://www.google.com/">HyperLink</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
